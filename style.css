@@ -1,0 +1,79 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+canvas {
+    background-color: black;
+}
+
+.menu{
+    background-color: black;
+    color: green;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.menu h1{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu button{
+    width: 60%;
+    height: fit-content;
+    padding: 1rem;
+    font-size: 3rem;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.death{
+    position: absolute;
+    background-color: black;
+    color: red;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.died{
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 1;
+}
+
+.death h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.death button{
+    width: 60%;
+    height: fit-content;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
